@@ -3,22 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
 public class Score : MonoBehaviour
 {
-    public Paddle paddle;
-    Text text;
+	[SerializeField] Paddle paddle;
+	[SerializeField] private Image image;
+	[SerializeField] private Sprite[] scoreSprites;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        text = GetComponent<Text>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        text.text = paddle.score.ToString();
-    }
+	public void UpdateScore()
+	{
+		image.sprite = scoreSprites[Mathf.Clamp(++paddle.score, 0, scoreSprites.Length - 1)];
+	}
 }

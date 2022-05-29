@@ -23,13 +23,13 @@ public class Ball : MonoBehaviour
     {
         //Texto del ganador si un jugador alcanza los 10 puntos y se para el juego//
 
-        if (paddle1.score >= 10)
+        if (paddle1.score > 9)
         {
             winText.enabled = true;
             winText.text = "Player 1 Wins!";
             Time.timeScale = 0;
         }
-        else if (paddle2.score >= 10)
+        else if (paddle2.score > 9)
         {
             winText.enabled = true;
             winText.text = "Player 2 wins!";
