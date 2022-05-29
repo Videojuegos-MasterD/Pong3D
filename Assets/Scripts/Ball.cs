@@ -51,12 +51,16 @@ public class Ball : MonoBehaviour
         transform.position = new Vector3(0, 0, 0);
 
         countdownText.enabled = true;
+
+        Time.timeScale = 0f;
         
         for (int i = 3; i > 0; i--)//Cuenta atrás: 3... 2... 1... y la bola sale//
         {
             countdownText.text = i.ToString();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSecondsRealtime(1);
         }
+
+        Time.timeScale = 1f;
 
         countdownText.enabled = false;
         rb.velocity = new Vector3(velX, 0, velZ);

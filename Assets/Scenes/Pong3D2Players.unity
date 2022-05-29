@@ -1841,10 +1841,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1db09c75bd54744b82a9b4e4cb991e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  up: up
-  down: down
   speed: 8
   score: 0
+  upKey: 273
+  downKey: 274
+  rb: {fileID: 1355674961}
+  ball: {fileID: 1869910369}
+  hasAI: 0
 --- !u!54 &1355674961
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2354,10 +2357,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1db09c75bd54744b82a9b4e4cb991e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  up: w
-  down: s
   speed: 8
   score: 0
+  upKey: 119
+  downKey: 115
+  rb: {fileID: 1934156545}
+  ball: {fileID: 0}
+  hasAI: 0
 --- !u!54 &1934156545
 Rigidbody:
   m_ObjectHideFlags: 0
