@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: fa9d697a4a0105349833b2ded808104b
   - enabled: 1
-    path: Assets/Scenes/Pong3D1Player 1.unity
+    path: Assets/Scenes/Pong3D1Player.unity
     guid: e1671b156f53b1c4b8eea719a78a6d2c
   - enabled: 1
     path: Assets/Scenes/Pong3D2Players.unity
-    guid: c262e65263eb3b64cb68b132d5415e5b
+    guid: 76c1a6b16dbe772408a88e345c4fabe1
   m_configObjects: {}
