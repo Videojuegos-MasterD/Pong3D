@@ -1,6 +1,8 @@
 # Pong3D
-This project tries to imagine the famous Atari Pong in 3D with a retro aesthetic from the 80s. 
+This project tries to reimagine the famous Atari Pong in 3D with a retro aesthetic from the 80s. 
 The references for the project are Pong (1972) and Pong: The Next Level (1999). 
+
+Made with Unity 2020.3.32f1.
 
 # Level design
 The level is composed of the same elements as the original game but this use a top down perspective instead of a zenithal perspective. 
