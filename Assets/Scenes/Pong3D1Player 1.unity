@@ -7414,6 +7414,7 @@ GameObject:
   - component: {fileID: 1637958473}
   - component: {fileID: 1637958475}
   - component: {fileID: 1637958474}
+  - component: {fileID: 1637958476}
   m_Layer: 5
   m_Name: WinImage
   m_TagString: Untagged
@@ -7447,7 +7448,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637958472}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7478,6 +7479,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637958472}
   m_CullTransparentMesh: 1
+--- !u!95 &1637958476
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637958472}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e831b82c2f1f5642b980a3b401b0051, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1766300989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7758,7 +7778,7 @@ MonoBehaviour:
   winSprite:
   - {fileID: 3224567284022414767, guid: c6f3856433667b8428441ae01e4ff387, type: 3}
   - {fileID: -8273678229649608403, guid: c6f3856433667b8428441ae01e4ff387, type: 3}
-  myAnimationController: {fileID: 1522856490}
+  myAnimationController: {fileID: 1637958476}
 --- !u!1 &1934156539
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class Ball : MonoBehaviour
     //[SerializeField] public Image countdownImage;
     //[SerializeField] public Sprite[] countdownSprite;
     [SerializeField] public Image winImage;
-    [SerializeField] public Sprite[] winSprite;
+    [SerializeField] public Sprite[] winSprite = new Sprite[2];
     [SerializeField] private Animator myAnimationController;
 
     private void Awake()
@@ -33,21 +33,21 @@ public class Ball : MonoBehaviour
 
     public void ReturnToCenter()
     {
-        winImage.enabled = false; //Texto del ganador. Si un jugador alcanza los 10 puntos se para el juego.
-
+        winImage.enabled = false; 
+        
         if (paddle1.score > 9)
         {
             soundManager.SelectionAudio(2, 0.25f);
             winImage.enabled = true;
-            winImage.sprite = winSprite[winSprite.Length - 1];
-            Time.timeScale = 0;
+            winImage.sprite = winSprite[0];
+            myAnimationController.SetTrigger("OnWin");
         }
         else if (paddle2.score > 9)
         {
             soundManager.SelectionAudio(2, 0.25f);
             winImage.enabled = true;
             winImage.sprite = winSprite[winSprite.Length - 1];
-            Time.timeScale = 0; 
+            myAnimationController.SetTrigger("OnWin");
         }
         else
         {
